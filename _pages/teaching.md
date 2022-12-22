@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching (CMU)
+title: Teaching
 description: Graduate and undergraduate courses in Chemical Engineering at CMU
 nav: true
 nav_order: 5
