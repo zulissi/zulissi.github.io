@@ -1,6 +1,17 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"ML/GNN":
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Catalysis":
+  color: "#00369f"
+
+"Catalysis/ML":
+  color: "#00369f"
+
+"Nanotechnology":
+  color: "#00369f"
+
+"Systems":
+  color: "#00369f"
+
+"Soft Materials":
+  color: "#00369f"
