@@ -1,17 +1,17 @@
 "ML/GNN":
-  color: "#00369f"
+  color: "#cc0000"
 
 "Catalysis":
-  color: "#00369f"
+  color: "#3465a4"
 
 "Catalysis/ML":
-  color: "#00369f"
+  color: "#75507b"
 
 "Nanotechnology":
-  color: "#00369f"
+  color: "#73d216"
 
 "Systems":
-  color: "#00369f"
+  color: "#f57900"
 
 "Soft Materials":
-  color: "#00369f"
+  color: "#edd400"
