@@ -8,6 +8,27 @@
     - name: Languages
       value: English
 
+- title: Experience
+  type: time_table
+  contents:
+    - title: Associate Professor of Chemical Engineering
+      institution: Carnegie Mellon University
+      year: 2022-present
+      description:
+        - Machine learning for computational chemistry
+        - Engineering and discovery of catalysts and inorganic materials
+    - title: Assistant Professor of Chemical Engineering
+      institution: Carnegie Mellon University
+      year: 2017-2022
+      description:
+        - Machine learning for computational chemistry
+        - Engineering and discovery of catalysts and inorganic materials
+    - title: Postdoctoral Scholar
+      institution: Stanford University
+      year: 2015-2017
+      description:
+        - Postdoc with Jens Nørskov in computational catalysis
+
 - title: Education
   type: time_table
   contents:
@@ -30,58 +51,57 @@
         - B.E. in Chemical Engineering
         - B.S. in Physics
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Associate Professor of Chemical Engineering
-      institution: Carnegie Mellon University
-      year: 2022-present
-      description:
-        - Machine learning for computational chemistry
-        - Engineering and discovery of catalysts and inorganic materials
-    - title: Assistant Professor of Chemical Engineering
-      institution: Carnegie Mellon University
-      year: 2017-2022
-      description:
-        - Machine learning for computational chemistry
-        - Engineering and discovery of catalysts and inorganic materials
-    - title: Postdoctoral Scholar
-      institution: Stanford University
-      year: 2015-2017
-      description:
-        - Postdoc with Jens Nørskov in computational catalysis
-
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/Open-Catalyst-Project/">Open Catalyst Project</a>
+      year: 2020-now
+      description: The Open Catalyst Project builds open datasets and machine learning models to accelerate catalyst simulations.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - Dean's Early Career Fellow (CMU Engineering Award)
+    - year: 2021
       items: 
-        - Max Planck Medal
+        - G.T. Ladd Research Award
+    - year: 2020
+      items: 
+        - 3M Non-Tenured Faculty Award (NTFA)
+        - ACS Petroleum Research Fund (PRF) doctoral new investigator
+    - year: 2019
+      items: 
+        - Scott Institute for Energy Innovation Fellow
+    - year: 2010-2014
+      items: 
+        - DOE CSGF Fellow
+    - year: 2009-2010
+      items: 
+        - NSF GRFP Fellow
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: Catalyst modeling and discovery
       items:
-        - Description 1.
-        - Description 2.
+        - Use of DFT to predict activity, selectivity, stability
+        - Active learning methods to systematically discover new catalysts
+        - Matching high-throughput calculations and experiments
+        - Electrochemical (CO2RR, HER, OER, ORR) and thermal catalysis (especially selective catalysis)
+    - title: Artificial Intelligence / Machine Learning
+      items:
+        - Large graph neural networks to predict simulation data
+        - Fine-tuning and active learning to accelerate
+        - Uncertainty quantification
+        - Embedding of ML models in heuristic optimization systems
+    - title: Nanotechnology
+        - Carbon nanotube devices and sensors
+        - Interfacial phenomena
+        - Classical molecular dynamics simulations
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Cycling, cooking, traveling, outdoors, hiking
