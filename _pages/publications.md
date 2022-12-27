@@ -15,7 +15,7 @@ children:
     - title: catalysis/ml
       permalink: /publications/catalysis_ml/
     - title: ML/GNNs
-      permalink: /publications/catalysis/
+      permalink: /publications/mlgnn/
     - title: nanotechnology
       permalink: /publications/nanotechnology/
 ---
