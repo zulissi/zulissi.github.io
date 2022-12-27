@@ -8,6 +8,6 @@ nav: false
 <!-- _pages/publications.md -->
 <div class="publications">
 
-  {% bibliography -f papers -q @*[abbr={Catalysis}]* %}
+  {% bibliography -f papers -q @*[abbr=Catalysis]* %}
 
 </div>

@@ -9,7 +9,7 @@ nav_order: 1
 dropdown: true
 children: 
     - title: all (by year)
-      permalink: /publications/all/
+      permalink: /publications/
     - title: catalysis
       permalink: /publications/catalysis/
     - title: catalysis/ml
