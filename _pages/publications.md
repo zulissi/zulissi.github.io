@@ -8,13 +8,15 @@ nav: true
 nav_order: 1
 dropdown: true
 children: 
+    - title: all (by year)
+      permalink: /publications/all/
     - title: catalysis
       permalink: /publications/catalysis/
     - title: catalysis/ml
       permalink: /publications/catalysis_ml/
     - title: ML/GNNs
       permalink: /publications/catalysis/
-    - title: Nanotechnology
+    - title: nanotechnology
       permalink: /publications/nanotechnology/
 ---
 <!-- _pages/publications.md -->
