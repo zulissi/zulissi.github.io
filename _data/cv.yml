@@ -11,9 +11,14 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Research Scientist
+      institution: Meta Fundamental AI Research (FAIR)
+      year: 2023-present
+      description:
+        - AI for chemistry and catalysis
     - title: Associate Professor of Chemical Engineering
       institution: Carnegie Mellon University
-      year: 2022-present
+      year: 2022-present (on leave)
       description:
         - Machine learning for computational chemistry
         - Engineering and discovery of catalysts and inorganic materials
