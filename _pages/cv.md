@@ -5,4 +5,6 @@ title: cv
 nav: true
 nav_order: 4
 cv_pdf: ulissi_cv.pdf
----
+description: Ulissi CV
+toc:
+  sidebar: left
