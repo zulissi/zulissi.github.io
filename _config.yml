@@ -69,7 +69,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: zulissi # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
+x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: zulissi # your LinkedIn user name
 telegram_username: # your Telegram user name
@@ -111,7 +111,6 @@ contact_note: #
 
 google_analytics: G-Y660MBQK3H # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
-
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
