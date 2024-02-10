@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Graduate and undergraduate courses in Chemical Engineering at CMU
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 While at CMU I taught three different courses:
