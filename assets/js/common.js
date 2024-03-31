@@ -12,6 +12,10 @@ $(document).ready(function () {
 
   // bootstrap-toc
   if ($("#toc-sidebar").length) {
+    // remove related publications years from the TOC
+    $(".publications h2").each(function () {
+      $(this).attr("data-toc-skip", "");
+    });
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
@@ -26,13 +30,7 @@ $(document).ready(function () {
   cssLink.rel = "stylesheet";
   cssLink.type = "text/css";
 
-  let theme = localStorage.getItem("theme");
-  if (theme == null || theme == "null") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      theme = "dark";
-    }
-  }
+  let theme = determineComputedTheme();
 
   $(".jupyter-notebook-iframe-container iframe").each(function () {
     $(this).contents().find("head").append(cssLink);
