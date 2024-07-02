@@ -15,4 +15,3 @@ While at CMU I taught three different courses:
   * [Course github repo (notes)](https://github.com/ulissigroup/F22-06-325)
   * [Course website](https://ulissigroup.cheme.cmu.edu/F22-06-325/intro.html)
 * Chemical and Reactive Systems (06-625). I taught a graduate course on reaction engineering and numerical methods for MS-level chemical engineers.    
-  * [Course github repo (notes)](https://github.com/zulissi/f18-06625)
