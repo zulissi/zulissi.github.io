@@ -91,7 +91,12 @@ ninja.data = [{
           section: "News",},{id: "news-the-ocp-demo-website-was-launched-check-it-out-at-https-open-catalyst-metademolab-com",
           title: 'The OCP Demo website was launched! Check it out at https://open-catalyst.metademolab.com/',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-project-10",
+          title: 'project 10',
+          description: "A project with an introduction section",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_project/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
