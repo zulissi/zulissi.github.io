@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Senior Research Manager at Meta Fundamental AI Research (FAIR), and Adjunct Professor of Chemical Engineering at Carnegie Mellon University</a>.
+subtitle: <a href='#'>Director of AI Research at Meta Fundamental AI Research (FAIR), and Adjunct Professor of Chemical Engineering at Carnegie Mellon University</a>.
 
 profile:
   align: right
@@ -24,7 +24,7 @@ latest_posts:
   enabled: false
 ---
 
-At Meta's Fundamental AI Research lab I co-lead the FAIR Chemistry team (along with Larry Zitnick!) where we work on AI/ML broadly applied to materials and chemistry, as well as internal Meta consumer electronics applications in the AR/VR space. I joined Meta's Fundamental AI Research lab in 2023 to work on AI for chemistry and climate applications and am located in the SF bay area. I am extremely excited about how AI/ML methods can help many types of quantum chemistry simulations and lead to better materials to solve a range of societal scale challenges.
+At Meta's Fundamental AI Research lab I lead the FAIR Chemistry team where we work on AI/ML broadly applied to materials and chemistry, as well as internal Meta consumer electronics applications in the AR/VR space. I joined Meta's Fundamental AI Research lab in 2023 to work on AI for chemistry and climate applications and am located in the SF bay area. I am extremely excited about how AI/ML methods can help many types of quantum chemistry simulations and lead to better materials to solve a range of societal scale challenges.
 
 I am also an adjunct professor of chemical engineering at CMU since 2024. Prior to 2023 I was an assistant and then associate professor, and in 2023 I was on leave from my position at CMU. I joined Carnegie Mellon University in 2017, after doing my PhD at MIT and post-doc at Stanford. My PhD work at MIT focused on the applications of systems engineering methods to understanding selective nanoscale carbon nanotube devices and sensors under the supervision of Michael Strano and Richard Braatz. I did my postdoctoral work at Stanford with Jens Nørskov where I worked on machine learning techniques to simplify complex catalyst reaction networks, applied to the electrochemical reduction of N2 and CO2 to fuels. At CMU I continued these efforts to model, understand, and design nanoscale interfaces using machine learning and predictive methods to guide detailed molecular simulations.
 

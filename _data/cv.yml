@@ -1,10 +1,10 @@
 cv:
   name: Zachary W. Ulissi
-  label: Research Scientist & Adjunct Professor
+  label: Director of AI Research & Adjunct Professor
   email: zulissi@gmail.com
   location: Menlo Park, CA / Pittsburgh, PA
   image: ""
-  summary: Research Scientist at Meta Fundamental AI Research (FAIR) and Adjunct Professor of Chemical Engineering at Carnegie Mellon University.
+  summary: Director of AI Research at Meta Fundamental AI Research (FAIR) and Adjunct Professor of Chemical Engineering at Carnegie Mellon University.
 
   social_networks:
     - network: GitHub
@@ -43,12 +43,28 @@ cv:
 
     Experience:
       - company: Meta Fundamental AI Research (FAIR)
+        position: Director of AI Research
+        location: Menlo Park, CA
+        start_date: 2026
+        end_date: present
+        highlights:
+          - Lead the FAIR Chemistry team
+          - AI for chemistry and catalysis
+      - company: Meta Fundamental AI Research (FAIR)
+        position: Senior Research Manager
+        location: Menlo Park, CA
+        start_date: 2024
+        end_date: 2026
+        highlights:
+          - Co-led the FAIR Chemistry team
+          - AI for chemistry and materials
+      - company: Meta Fundamental AI Research (FAIR)
         position: Research Scientist
         location: Menlo Park, CA
         start_date: 2023
-        end_date: present
+        end_date: 2024
         highlights:
-          - AI for chemistry and catalysis
+          - Joined FAIR in 2023 to work on AI for chemistry and catalysis
       - company: Carnegie Mellon University
         position: Adjunct Professor of Chemical Engineering
         location: Pittsburgh, PA
