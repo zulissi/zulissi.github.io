@@ -167,16 +167,15 @@ analytics:
   cloudflare: # your Cloudflare Web Analytics beacon token (32 hex characters)
 enable_simple_analytics: false # Simple Analytics identifies a site by its domain, so it has no ID to set above
 
-google_site_verification:  # your google-site-verification ID (Google Search Console)
-bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
-
+google_site_verification: # your google-site-verification ID (Google Search Console)
+bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
 blog_name: Zack Ulissi # blog_name will be displayed in your blog page
-blog_nav_title:  # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
 blog_description: bio, publications, and code for Zack Ulissi
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -391,7 +390,6 @@ scholar:
   last_name: [Ulissi]
   first_name: [Zachary W.]
 
-
   style: apa
   locale: en
 
@@ -507,7 +505,6 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
-
 
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
