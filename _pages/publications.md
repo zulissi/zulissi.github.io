@@ -116,12 +116,13 @@ nav_order: 1
 <!-- Filter Buttons -->
 <div class="pub-filter-container" id="publication-filters">
   <button class="pub-filter-btn active" data-filter="all">All <span class="count-pill" id="cnt-all"></span></button>
+  <button class="pub-filter-btn" data-filter="ai/ml models"><i class="fa-solid fa-brain"></i> AI/ML Models <span class="count-pill" id="cnt-models"></span></button>
   <button class="pub-filter-btn" data-filter="ml datasets"><i class="fa-solid fa-database"></i> ML Datasets <span class="count-pill" id="cnt-datasets"></span></button>
-  <button class="pub-filter-btn" data-filter="ml models"><i class="fa-solid fa-brain"></i> ML Models <span class="count-pill" id="cnt-models"></span></button>
   <button class="pub-filter-btn" data-filter="catalysis"><i class="fa-solid fa-fire-burner"></i> Catalysis <span class="count-pill" id="cnt-catalysis"></span></button>
   <button class="pub-filter-btn" data-filter="inorganic materials"><i class="fa-solid fa-gem"></i> Inorganic Materials <span class="count-pill" id="cnt-inorganic"></span></button>
-  <button class="pub-filter-btn" data-filter="organic molecules"><i class="fa-solid fa-dna"></i> Organic Molecules <span class="count-pill" id="cnt-organic"></span></button>
+  <button class="pub-filter-btn" data-filter="molecules"><i class="fa-solid fa-atom"></i> Molecules <span class="count-pill" id="cnt-molecules"></span></button>
   <button class="pub-filter-btn" data-filter="metal-organic frameworks"><i class="fa-solid fa-cubes"></i> Metal-Organic Frameworks <span class="count-pill" id="cnt-mofs"></span></button>
+  <button class="pub-filter-btn" data-filter="biochemistry"><i class="fa-solid fa-dna"></i> Bio(chemistry) <span class="count-pill" id="cnt-biochem"></span></button>
   <button class="pub-filter-btn" data-filter="nanotechnology"><i class="fa-solid fa-microchip"></i> Nanotechnology <span class="count-pill" id="cnt-nanotech"></span></button>
 </div>
 
@@ -156,12 +157,13 @@ document.addEventListener("DOMContentLoaded", function() {
   // Calculate counts dynamically from parsed data-tags
   const counts = {
     "all": pubItems.length,
+    "ai/ml models": 0,
     "ml datasets": 0,
-    "ml models": 0,
     "catalysis": 0,
     "inorganic materials": 0,
-    "organic molecules": 0,
+    "molecules": 0,
     "metal-organic frameworks": 0,
+    "biochemistry": 0,
     "nanotechnology": 0
   };
 
@@ -176,12 +178,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const idMap = {
     "all": "cnt-all",
+    "ai/ml models": "cnt-models",
     "ml datasets": "cnt-datasets",
-    "ml models": "cnt-models",
     "catalysis": "cnt-catalysis",
     "inorganic materials": "cnt-inorganic",
-    "organic molecules": "cnt-organic",
+    "molecules": "cnt-molecules",
     "metal-organic frameworks": "cnt-mofs",
+    "biochemistry": "cnt-biochem",
     "nanotechnology": "cnt-nanotech"
   };
 
