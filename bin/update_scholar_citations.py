@@ -98,11 +98,15 @@ def get_scholar_citations() -> None:
 
             print(f"Found: {title} ({year}) - Citations: {citations}")
 
-            citation_data["papers"][pub_id] = {
+            paper_entry = {
                 "title": title,
                 "year": year,
                 "citations": citations,
             }
+            citation_data["papers"][pub_id] = paper_entry
+            if ":" in str(pub_id):
+                short_id = str(pub_id).split(":")[-1]
+                citation_data["papers"][short_id] = paper_entry
         except Exception as e:
             print(
                 f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
