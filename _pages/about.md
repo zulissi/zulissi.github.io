@@ -9,12 +9,19 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-      <p>zulissi@meta.com</p>
-      <p>zulissi@gmail.com </p> 
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+    <p>zulissi@meta.com</p>
+    <p>zulissi@gmail.com</p>
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
 ---
 
 At Meta's Fundamental AI Research lab I co-lead the FAIR Chemistry team (along with Larry Zitnick!) where we work on AI/ML broadly applied to materials and chemistry, as well as internal Meta consumer electronics applications in the AR/VR space. I joined Meta's Fundamental AI Research lab in 2023 to work on AI for chemistry and climate applications and am located in the SF bay area. I am extremely excited about how AI/ML methods can help many types of quantum chemistry simulations and lead to better materials to solve a range of societal scale challenges. 

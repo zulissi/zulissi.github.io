@@ -1,116 +1,123 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Zachary W. Ulissi
-    - name: Date of Birth
-      value: 1987
-    - name: Languages
-      value: English
+cv:
+  name: Zachary W. Ulissi
+  label: Research Scientist & Adjunct Professor
+  email: zulissi@gmail.com
+  location: Menlo Park, CA / Pittsburgh, PA
+  image: ""
+  summary: Research Scientist at Meta Fundamental AI Research (FAIR) and Adjunct Professor of Chemical Engineering at Carnegie Mellon University.
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Research Scientist
-      institution: Meta Fundamental AI Research (FAIR)
-      year: 2023-present
-      description:
-        - AI for chemistry and catalysis
-    - title: Adjunct Professor of Chemical Engineering
-      institution: Carnegie Mellon University
-      year: 2024-present
-    - title: Associate Professor of Chemical Engineering
-      institution: Carnegie Mellon University
-      year: 2022-2023
-      description:
-        - Machine learning for computational chemistry
-        - Engineering and discovery of catalysts and inorganic materials
-    - title: Assistant Professor of Chemical Engineering
-      institution: Carnegie Mellon University
-      year: 2017-2022
-      description:
-        - Machine learning for computational chemistry
-        - Engineering and discovery of catalysts and inorganic materials
-    - title: Postdoctoral Scholar
-      institution: Stanford University
-      year: 2015-2017
-      description:
-        - Postdoc with Jens Nørskov in computational catalysis
+  social_networks:
+    - network: GitHub
+      username: zulissi
+    - network: LinkedIn
+      username: zulissi
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: Massachusetts Institute of Technology
-      year: 2015
-      description:
-        - Simulations and theory to describe carbon nanotube devices and sensors
-        - Systems engineering and parameter estimations for nanotube simulations
-    - title: M.A.St.
-      institution: Churchill College, Cambridge, UK
-      year: 2010
-      description:
-        - Applied math and fluid dynamics courses. 
-        - Research with Raymond Goldstein
-    - title: B.E/B.S.
-      institution: University of Delaware
-      year: 2009
-      description:
-        - B.E. in Chemical Engineering
-        - B.S. in Physics
+  sections:
+    Education:
+      - institution: Massachusetts Institute of Technology
+        location: Cambridge, MA
+        area: Chemical Engineering
+        studyType: PhD
+        start_date: 2010
+        end_date: 2015
+        highlights:
+          - Simulations and theory to describe carbon nanotube devices and sensors
+          - Systems engineering and parameter estimations for nanotube simulations
+      - institution: Churchill College, Cambridge, UK
+        area: Applied Mathematics and Theoretical Physics
+        studyType: M.A.St.
+        start_date: 2009
+        end_date: 2010
+        highlights:
+          - Applied math and fluid dynamics courses
+          - Research with Raymond Goldstein
+      - institution: University of Delaware
+        location: Newark, DE
+        area: Chemical Engineering and Physics
+        studyType: B.E. / B.S.
+        start_date: 2005
+        end_date: 2009
+        highlights:
+          - B.E. in Chemical Engineering
+          - B.S. in Physics
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/Open-Catalyst-Project/">Open Catalyst Project</a>
-      year: 2020-now
-      description: The Open Catalyst Project builds open datasets and machine learning models to accelerate catalyst simulations.
+    Experience:
+      - company: Meta Fundamental AI Research (FAIR)
+        position: Research Scientist
+        location: Menlo Park, CA
+        start_date: 2023
+        end_date: present
+        highlights:
+          - AI for chemistry and catalysis
+      - company: Carnegie Mellon University
+        position: Adjunct Professor of Chemical Engineering
+        location: Pittsburgh, PA
+        start_date: 2024
+        end_date: present
+      - company: Carnegie Mellon University
+        position: Associate Professor of Chemical Engineering
+        location: Pittsburgh, PA
+        start_date: 2022
+        end_date: 2023
+        highlights:
+          - Machine learning for computational chemistry
+          - Engineering and discovery of catalysts and inorganic materials
+      - company: Carnegie Mellon University
+        position: Assistant Professor of Chemical Engineering
+        location: Pittsburgh, PA
+        start_date: 2017
+        end_date: 2022
+        highlights:
+          - Machine learning for computational chemistry
+          - Engineering and discovery of catalysts and inorganic materials
+      - company: Stanford University
+        position: Postdoctoral Scholar
+        location: Stanford, CA
+        start_date: 2015
+        end_date: 2017
+        highlights:
+          - Postdoc with Jens Nørskov in computational catalysis
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2022
-      items: 
-        - Dean's Early Career Fellow (CMU Engineering Award)
-    - year: 2021
-      items: 
-        - G.T. Ladd Research Award
-    - year: 2020
-      items: 
-        - 3M Non-Tenured Faculty Award (NTFA)
-        - ACS Petroleum Research Fund (PRF) doctoral new investigator
-    - year: 2019
-      items: 
-        - Scott Institute for Energy Innovation Fellow
-    - year: 2010-2014
-      items: 
-        - DOE CSGF Fellow
-    - year: 2009-2010
-      items: 
-        - NSF GRFP Fellow
+    Awards:
+      - title: Dean's Early Career Fellow (CMU Engineering Award)
+        awarder: Carnegie Mellon University
+        date: 2022
+      - title: G.T. Ladd Research Award
+        awarder: Carnegie Mellon University
+        date: 2021
+      - title: 3M Non-Tenured Faculty Award (NTFA)
+        awarder: 3M
+        date: 2020
+      - title: Doctoral New Investigator
+        awarder: ACS Petroleum Research Fund (PRF)
+        date: 2020
+      - title: Scott Institute for Energy Innovation Fellow
+        awarder: CMU Scott Institute
+        date: 2019
+      - title: DOE CSGF Fellow
+        awarder: Department of Energy
+        date: 2010
+      - title: NSF GRFP Fellow
+        awarder: National Science Foundation
+        date: 2009
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Catalyst modeling and discovery
-      items:
-        - Use of DFT to predict activity, selectivity, stability
-        - Active learning methods to systematically discover new catalysts
-        - Matching high-throughput calculations and experiments
-        - Electrochemical (CO2RR, HER, OER, ORR) and thermal catalysis (especially selective catalysis)
-    - title: Artificial Intelligence / Machine Learning
-      items:
-        - Large graph neural networks to predict simulation data
-        - Fine-tuning and active learning to accelerate
-        - Uncertainty quantification
-        - Embedding of ML models in heuristic optimization systems
-    - title: Nanotechnology
-      items:
-        - Carbon nanotube devices and sensors
-        - Interfacial phenomena
-        - Classical molecular dynamics simulations
+    Projects:
+      - name: Open Catalyst Project
+        start_date: 2020
+        end_date: present
+        url: https://github.com/Open-Catalyst-Project/
+        summary: The Open Catalyst Project builds open datasets and machine learning models to accelerate catalyst simulations.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Cycling, cooking, traveling, outdoors, hiking
+    Interests:
+      - name: Catalyst Modeling and Discovery
+        icon: fa-solid fa-atom
+        keywords: "DFT, Active learning, High-throughput calculations, Electrochemical (CO2RR, HER, OER, ORR) and thermal catalysis"
+      - name: Artificial Intelligence / Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "Large graph neural networks, Fine-tuning, Active learning, Uncertainty quantification, Heuristic optimization systems"
+      - name: Nanotechnology
+        icon: fa-solid fa-microchip
+        keywords: "Carbon nanotube devices and sensors, Interfacial phenomena, Classical molecular dynamics simulations"
+      - name: Other Interests
+        icon: fa-solid fa-bicycle
+        keywords: "Cycling, cooking, traveling, outdoors, hiking"
