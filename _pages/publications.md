@@ -22,6 +22,18 @@ children:
 
 <!-- _pages/publications.md -->
 
+<style>
+  .publications h2.bibliography,
+  .publications h2.year {
+    color: var(--global-text-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+</style>
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
