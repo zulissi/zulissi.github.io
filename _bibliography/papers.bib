@@ -331,10 +331,10 @@
 
 @article{barroso2024open,
   abbr = {Inorganic Materials/ML},
-  title = {Open materials 2024 (omat24) inorganic materials dataset and models},
+  title = {The Open Materials 2024 (OMat24) inorganic materials dataset and models},
   author = {Barroso-Luque, Luis and Shuaibi, Muhammed and Fu, Xiang and Wood, Brandon M and Dzamba, Misko and Gao, Meng and Rizvi, Ammar and Zitnick, C Lawrence and Ulissi, Zachary W},
-  journal = {arXiv preprint arXiv:2410.12771},
-  year = {2024},
+  journal = {Nature Computational Science},
+  year = {2026},
   doi = {10.1038/s43588-026-00996-w},
   url = {https://doi.org/10.1038/s43588-026-00996-w},
   html = {https://doi.org/10.1038/s43588-026-00996-w},
@@ -1797,22 +1797,10 @@ T. and Ulissi, Zachary W. and Chan, Karen},
   abbr = {ML/GNN},
   title = {EVA-Flow: Environment-Aware Flow Matching for Unified 3D Molecular Conformation Generation},
   author = {Bing Yan and Benjamin Kurt Miller and Anuroop Sriram and Zachary Ward Ulissi and Kyunghyun Cho and Ricky TQ Chen},
-  year = {},
+  year = {2025},
   url = {https://openreview.net/forum?id=g8oocfZmA0},
   google_scholar_id = {bCjgOgSFrM0C},
   abstract = {Predicting the 3D geometry of molecules is central to applications in drug discovery, materials design, and molecular modeling. However, molecular geometry can change dramatically across environments (e.g., crystal lattice versus protein binding pocket). Existing generative approaches are typically environment-agnostic or require separate models for each environment, which limits generalization. We introduce EVA-Flow, a unified framework for environment-aware conformation generation. EVA-Flow combines a variational autoencoder with a flow matching decoder and incorporates environment information through a learned embedding. Across four environments including vacuum, protein-ligand docking, solvation, and crystal packing, EVA-Flow substantially improves generation accuracy through pretraining and unification. Analysis of shared molecules that appear in multiple environments further shows that EVA-Flow generates distinct, environment-specific conformations rather than memorizing a single geometry.},
   bibtex_show = {true}
 }
 
-@article{qua_o9UL,
-  abbr = {ML/GNN},
-  title = {A recipe for scalable attention-based ML potentials: unlocking long-range accuracy with all-to-all node attention},
-  author = {Eric Qu and Brandon M Wood and Aditi S Krishnapriyan and Zachary Ward Ulissi},
-  year = {},
-  url = {https://arxiv.org/abs/2603.06567},
-  html = {https://arxiv.org/abs/2603.06567},
-  arxiv = {2603.06567},
-  google_scholar_id = {o9ULDYDKYbIC},
-  abstract = {Machine-learning interatomic potentials (MLIPs) have advanced rapidly, with many top models relying on strong physics-based inductive bias. However, as models scale to larger systems like biomolecules and electrolytes, they struggle to accurately capture long-range (LR) interactions, leading current approaches to rely on explicit physics-based terms or components. In this work, we propose AllScAIP, a straightforward, attention-based, and energy-conserving MLIP model that scales to O(100 million) training samples. It addresses the long-range challenge using an all-to-all node attention component that is purely data-driven. Extensive ablations reveal that in low-data/small-model regimes, inductive biases improve sample efficiency. However, as data and model size scale, these benefits diminish or even reverse, while all-to-all attention remains critical for capturing LR interactions. Our model achieves state-of-the-art energy/force accuracy on molecular systems (OMol25), while being competitive on materials (OMat24) and catalysts (OC20).  Furthermore, it enables stable, long-timescale MD simulations that accurately recover experimental observables, including density and heat of vaporization predictions.},
-  bibtex_show = {true}
-}
