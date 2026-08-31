@@ -1,10 +1,14 @@
 github_users:
+  - zulissimeta
   - zulissi
 
 github_repos:
+  - facebookresearch/fairchem
+  - Open-Catalyst-Project/ocp
+  - facebookresearch/all-atom-diffusion-transformer
+  - Open-Catalyst-Project/Open-DAC-2023
   - ulissigroup/finetuna
   - ulissigroup/vasp-interactive
-  - Open-Catalyst-Project/ocp
   - ulissigroup/amptorch
   - ulissigroup/gaspy
   - ulissigroup/catgym

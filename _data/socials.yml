@@ -4,7 +4,11 @@
 
 cv_pdf: /assets/pdf/ulissi_cv.pdf # path to your CV PDF file
 email: zulissi@gmail.com # your email address
-github_username: zulissi # your GitHub user name
+github_username: zulissimeta # your primary active GitHub user name (Meta FAIR)
+custom_social:
+  - title: GitHub (CMU / Academic)
+    icon: fa-brands fa-github
+    url: https://github.com/zulissi
 linkedin_username: zulissi # your LinkedIn user name
 scholar_userid: E0tlVgQAAAAJ # your Google Scholar ID
 rss_icon: true # comment this line to hide the RSS icon

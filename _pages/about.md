@@ -11,6 +11,8 @@ profile:
   more_info: >
     <p>zulissi@meta.com</p>
     <p>zulissi@gmail.com</p>
+    <p><a href="https://github.com/zulissimeta" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> zulissimeta (Meta FAIR)</a></p>
+    <p><a href="https://github.com/zulissi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> zulissi (CMU / Academic)</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
