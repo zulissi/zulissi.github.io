@@ -13,12 +13,11 @@ nav_order: 1
 <style>
   .publications h2.bibliography,
   .publications h2.year {
-    color: var(--global-text-color);
+    color: var(--global-text-color) !important;
     font-weight: 600;
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-bottom: 0.25rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 
   .publications .links {
