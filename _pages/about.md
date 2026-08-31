@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Director of AI Research at Meta Fundamental AI Research (FAIR), and Adjunct Professor of Chemical Engineering at Carnegie Mellon University</a>.
+subtitle: "Director of AI Research at Meta Fundamental AI Research (FAIR)<br />Adjunct Professor of Chemical Engineering at Carnegie Mellon University"
 
 profile:
   align: right
