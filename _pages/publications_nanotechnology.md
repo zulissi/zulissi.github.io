@@ -17,6 +17,34 @@ nav: false
     margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
+
+  .publications .links {
+    display: inline-flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.25rem;
+    vertical-align: middle;
+  }
+
+  .publications .badges {
+    display: inline-flex !important;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 0.35rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .publications .badges .google-scholar-badge,
+  .publications .badges a,
+  .publications .badges span,
+  .publications .badges img {
+    display: inline-flex !important;
+    align-items: center;
+    vertical-align: middle;
+  }
 </style>
 
 <div class="publications">

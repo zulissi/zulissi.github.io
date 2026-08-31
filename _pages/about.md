@@ -24,6 +24,36 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+  .publications .links {
+    display: inline-flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.25rem;
+    vertical-align: middle;
+  }
+
+  .publications .badges {
+    display: inline-flex !important;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 0.35rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .publications .badges .google-scholar-badge,
+  .publications .badges a,
+  .publications .badges span,
+  .publications .badges img {
+    display: inline-flex !important;
+    align-items: center;
+    vertical-align: middle;
+  }
+</style>
+
 At Meta's Fundamental AI Research lab I lead the FAIR Chemistry team where we work on AI/ML broadly applied to materials and chemistry, as well as internal Meta consumer electronics applications in the AR/VR space. I joined Meta's Fundamental AI Research lab in 2023 to work on AI for chemistry and climate applications and am located in the SF bay area. I am extremely excited about how AI/ML methods can help many types of quantum chemistry simulations and lead to better materials to solve a range of societal scale challenges.
 
 I am also an adjunct professor of chemical engineering at CMU since 2024. Prior to 2023 I was an assistant and then associate professor, and in 2023 I was on leave from my position at CMU. I joined Carnegie Mellon University in 2017, after doing my PhD at MIT and post-doc at Stanford. My PhD work at MIT focused on the applications of systems engineering methods to understanding selective nanoscale carbon nanotube devices and sensors under the supervision of Michael Strano and Richard Braatz. I did my postdoctoral work at Stanford with Jens Nørskov where I worked on machine learning techniques to simplify complex catalyst reaction networks, applied to the electrochemical reduction of N2 and CO2 to fuels. At CMU I continued these efforts to model, understand, and design nanoscale interfaces using machine learning and predictive methods to guide detailed molecular simulations.
