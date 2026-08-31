@@ -6,18 +6,6 @@ description: publications by categories in reversed chronological order. generat
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006]
 nav: true
 nav_order: 1
-dropdown: true
-children:
-  - title: all (by year)
-    permalink: /publications/
-  - title: catalysis
-    permalink: /publications/catalysis/
-  - title: catalysis/ml
-    permalink: /publications/catalysis_ml/
-  - title: ML/GNNs
-    permalink: /publications/mlgnn/
-  - title: nanotechnology
-    permalink: /publications/nanotechnology/
 ---
 
 <!-- _pages/publications.md -->
@@ -60,7 +48,82 @@ children:
     align-items: center;
     vertical-align: middle;
   }
+
+  .pub-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+    align-items: center;
+  }
+
+  .pub-filter-btn {
+    border: 1px solid var(--global-divider-color);
+    background-color: var(--global-bg-color);
+    color: var(--global-text-color);
+    border-radius: 2rem;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    user-select: none;
+  }
+
+  .pub-filter-btn:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    transform: translateY(-1px);
+  }
+
+  .pub-filter-btn.active {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .pub-filter-btn .count-pill {
+    background: rgba(125, 125, 125, 0.15);
+    border-radius: 1rem;
+    padding: 0.1rem 0.45rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .pub-filter-btn.active .count-pill {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+  }
+
+  .publications .abbr {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+  }
+
+  .publications .abbr .badge {
+    white-space: normal;
+    text-align: left;
+    display: inline-block;
+  }
 </style>
+
+<!-- Filter Buttons -->
+<div class="pub-filter-container" id="publication-filters">
+  <button class="pub-filter-btn active" data-filter="all">All <span class="count-pill" id="cnt-all"></span></button>
+  <button class="pub-filter-btn" data-filter="ml datasets"><i class="fa-solid fa-database"></i> ML Datasets <span class="count-pill" id="cnt-datasets"></span></button>
+  <button class="pub-filter-btn" data-filter="ml models"><i class="fa-solid fa-brain"></i> ML Models <span class="count-pill" id="cnt-models"></span></button>
+  <button class="pub-filter-btn" data-filter="catalysis"><i class="fa-solid fa-fire-burner"></i> Catalysis <span class="count-pill" id="cnt-catalysis"></span></button>
+  <button class="pub-filter-btn" data-filter="inorganic materials"><i class="fa-solid fa-gem"></i> Inorganic Materials <span class="count-pill" id="cnt-inorganic"></span></button>
+  <button class="pub-filter-btn" data-filter="organic molecules"><i class="fa-solid fa-dna"></i> Organic Molecules <span class="count-pill" id="cnt-organic"></span></button>
+  <button class="pub-filter-btn" data-filter="metal-organic frameworks"><i class="fa-solid fa-cubes"></i> Metal-Organic Frameworks <span class="count-pill" id="cnt-mofs"></span></button>
+  <button class="pub-filter-btn" data-filter="nanotechnology"><i class="fa-solid fa-microchip"></i> Nanotechnology <span class="count-pill" id="cnt-nanotech"></span></button>
+</div>
 
 <!-- Bibsearch Feature -->
 
@@ -71,3 +134,100 @@ children:
 {% bibliography -f {{ site.scholar.bibliography }} %}
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const filterBtns = document.querySelectorAll(".pub-filter-btn");
+  const pubItems = document.querySelectorAll(".publications ol.bibliography > li, .publications ul.bibliography > li");
+
+  // Parse comma-separated tags from abbr and render individual badges
+  pubItems.forEach(item => {
+    const abbrEl = item.querySelector(".abbr, abbr.badge");
+    if (abbrEl) {
+      const rawText = abbrEl.textContent.trim();
+      const tags = rawText.split(",").map(t => t.trim()).filter(Boolean);
+      item.setAttribute("data-tags", tags.map(t => t.toLowerCase()).join(";"));
+      
+      // Render as individual badge spans
+      abbrEl.innerHTML = tags.map(t => `<span class="badge font-weight-bold mb-1" style="display:inline-block; margin-right:3px;">${t}</span>`).join(" ");
+    }
+  });
+
+  // Calculate counts dynamically from parsed data-tags
+  const counts = {
+    "all": pubItems.length,
+    "ml datasets": 0,
+    "ml models": 0,
+    "catalysis": 0,
+    "inorganic materials": 0,
+    "organic molecules": 0,
+    "metal-organic frameworks": 0,
+    "nanotechnology": 0
+  };
+
+  pubItems.forEach(item => {
+    const itemTags = (item.getAttribute("data-tags") || "").split(";").map(t => t.trim());
+    Object.keys(counts).forEach(filter => {
+      if (filter !== "all" && itemTags.includes(filter)) {
+        counts[filter]++;
+      }
+    });
+  });
+
+  const idMap = {
+    "all": "cnt-all",
+    "ml datasets": "cnt-datasets",
+    "ml models": "cnt-models",
+    "catalysis": "cnt-catalysis",
+    "inorganic materials": "cnt-inorganic",
+    "organic molecules": "cnt-organic",
+    "metal-organic frameworks": "cnt-mofs",
+    "nanotechnology": "cnt-nanotech"
+  };
+
+  Object.keys(counts).forEach(k => {
+    const elId = idMap[k];
+    if (elId) {
+      const el = document.getElementById(elId);
+      if (el) el.textContent = counts[k];
+    }
+  });
+
+  // Update Year Header Visibility
+  function updateYearHeaders() {
+    const yearHeaders = document.querySelectorAll(".publications h2.bibliography, .publications h2.year");
+    yearHeaders.forEach(header => {
+      let nextElem = header.nextElementSibling;
+      let hasVisiblePubs = false;
+      while (nextElem && !nextElem.matches("h2.bibliography, h2.year")) {
+        if (nextElem.matches("ol.bibliography, ul.bibliography")) {
+          const visibleLi = nextElem.querySelectorAll("li:not([style*='display: none'])");
+          if (visibleLi.length > 0) {
+            hasVisiblePubs = true;
+            break;
+          }
+        }
+        nextElem = nextElem.nextElementSibling;
+      }
+      header.style.display = hasVisiblePubs ? "" : "none";
+    });
+  }
+
+  // Filter click event
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", function() {
+      filterBtns.forEach(b => b.classList.remove("active"));
+      this.classList.add("active");
+      
+      const filter = this.getAttribute("data-filter").toLowerCase();
+      pubItems.forEach(item => {
+        const itemTags = (item.getAttribute("data-tags") || "").split(";").map(t => t.trim());
+        const isMatch = (filter === "all" || itemTags.includes(filter));
+        item.style.display = isMatch ? "" : "none";
+      });
+
+      updateYearHeaders();
+    });
+  });
+});
+</script>
