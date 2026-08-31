@@ -435,6 +435,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6,
 pre,
 code,
@@ -551,6 +552,11 @@ mark,
   background-color: #282828;
   color: #f8f8f0;
   padding: 0.15em;
+}
+
+a.text-warning,
+a.text-warning:hover {
+  color: #75715e;
 }
 
 #toc a,
