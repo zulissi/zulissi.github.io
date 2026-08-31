@@ -3,6 +3,7 @@ github_users:
   - zulissi
 
 github_repos:
+  - Quantum-Accelerators/quacc
   - facebookresearch/fairchem
   - Open-Catalyst-Project/ocp
   - facebookresearch/all-atom-diffusion-transformer
