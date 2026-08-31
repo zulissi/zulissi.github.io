@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /education/
-title: education
+permalink: /resources/
+title: teaching/resources
 description: Interactive tools, hands-on tutorials, open-source models, and university courses.
 nav: true
 nav_order: 6
